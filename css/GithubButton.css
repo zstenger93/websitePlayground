@@ -1,0 +1,56 @@
+/* MY WORK Button Styles */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.oval-button {
+	width: 180px;
+	height: 30px;
+	border: none;
+	background-image: url("../resources/images/button.jpeg");
+	background-size: cover;
+	background-color: transparent;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	transform-origin: left center;
+	animation: swing 3s ease-in-out infinite alternate;
+	left: -140px;
+}
+
+/* Keyframes for the swing animation */
+@keyframes swing {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(+30deg);
+	}
+}
+
+/* All links will have white text color */
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+a:visited {
+	color: #ffffff;
+}

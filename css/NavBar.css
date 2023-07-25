@@ -1,0 +1,104 @@
+/* Navbar Styles */
+nav {
+	background-color: #0f0f106d;
+	padding: 10px;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	background-color: #004080;
+}
+
+/* Sections Styles */
+section {
+	padding: 20px;
+}
+
+ul,
+ol {
+	margin-left: 30px;
+}
+
+.navbar-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+}
+
+.about-me {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #0f0f1022;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	overflow: hidden;
+	transition: top 0.4s ease-in-out;
+}
+
+/* Keyframes for the button fall animation */
+@keyframes fall {
+	0% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		top: calc(70vh - 30px);
+		transform: rotate(30deg);
+	}
+
+	100% {
+		top: calc(70vh - 30px);
+		transform: rotate(30deg);
+	}
+}
+
+.contact-me {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #0f0f1022;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	overflow: hidden;
+	transition: top 0.4s ease-in-out;
+}
+
+/* Keyframes for the button fall animation */
+@keyframes fallCM {
+	0% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		top: calc(70vh - 30px);
+		transform: rotate(-35deg);
+	}
+
+	100% {
+		top: calc(70vh - 30px);
+		transform: rotate(-35deg);
+	}
+}
+
+/* Style for the button text when falling animation ends */
+.black-text {
+	color: black;
+	font-weight: bold;
+}

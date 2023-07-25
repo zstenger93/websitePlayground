@@ -1,0 +1,43 @@
+/* Styles for the conversation bubble */
+.conversation-bubbleABM {
+	height: 20px;
+	position: absolute;
+	top: 38%;
+	left: 71%;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: #ffffff9c;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	display: none;
+}
+
+.conversation-bubbleCM {
+	height: 20px;
+	position: absolute;
+	top: 43%;
+	left: 74%;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: #ffffff9c;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	display: none;
+}
+
+.conversation-bubbleCM-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* Style for the conversation bubble text */
+.conversation-bubble p {
+	color: #333;
+	font-size: 14px;
+}
