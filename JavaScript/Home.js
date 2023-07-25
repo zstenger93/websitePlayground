@@ -119,28 +119,58 @@ conversationBubbleP.appendChild(bubbleTextP);
 document.body.appendChild(conversationBubbleP);
 
 
-const dropdownButton = document.querySelector('.dropbtn');
-const dropdownContent = document.querySelector('.dropdown-content');
+const dropdownButton1 = document.querySelector('.dropbtn');
+const dropdownContent1 = document.querySelector('.dropdown-content');
 
-dropdownContent.style.display = 'none';
+let isDropdownOpen1 = false;
 
-dropdownButton.addEventListener('mouseenter', () => {
-  dropdownContent.style.display = 'flex';
+function toggleDropdown1() {
+  if (isDropdownOpen1) {
+    dropdownContent1.style.display = 'none';
+  } else {
+    dropdownContent1.style.display = 'flex';
+  }
+  isDropdownOpen1 = !isDropdownOpen1;
+}
+
+dropdownButton1.addEventListener('click', toggleDropdown1);
+
+document.addEventListener('click', (event) => {
+  const targetElement1 = event.target;
+  if (!dropdownButton1.contains(targetElement1) && !dropdownContent1.contains(targetElement)) {
+    dropdownContent1.style.display = 'none';
+    isDropdownOpen1 = false;
+  }
 });
 
-dropdownButton.addEventListener('mouseleave', () => {
-  dropdownContent.style.display = 'none';
+dropdownContent1.addEventListener('click', (event) => {
+  event.stopPropagation();
 });
 
 const dropdownButton2 = document.querySelector('.dropbtn2');
 const dropdownContent2 = document.querySelector('.dropdown-content2');
 
-dropdownContent2.style.display = 'none';
+let isDropdownOpen = false;
 
-dropdownButton2.addEventListener('mouseenter', () => {
-  dropdownContent2.style.display = 'flex';
+function toggleDropdown() {
+  if (isDropdownOpen) {
+    dropdownContent2.style.display = 'none';
+  } else {
+    dropdownContent2.style.display = 'flex';
+  }
+  isDropdownOpen = !isDropdownOpen;
+}
+
+dropdownButton2.addEventListener('click', toggleDropdown);
+
+document.addEventListener('click', (event) => {
+  const targetElement = event.target;
+  if (!dropdownButton2.contains(targetElement) && !dropdownContent2.contains(targetElement)) {
+    dropdownContent2.style.display = 'none';
+    isDropdownOpen = false;
+  }
 });
 
-dropdownButton2.addEventListener('mouseleave', () => {
-  dropdownContent2.style.display = 'none';
+dropdownContent2.addEventListener('click', (event) => {
+  event.stopPropagation();
 });
