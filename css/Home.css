@@ -4,17 +4,11 @@ body {
 	background-image: url("../resources/images/space.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
-}
-
-/* Set background image for a specific section */
-.section-with-background {
-	background-image: url("../resources/images/space.jpeg");
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 h1 {
@@ -31,7 +25,7 @@ h2 {
 }
 
 p {
-	color: #555;
+	color: #000000;
 	font-size: 16px;
 }
 
@@ -74,21 +68,6 @@ ol {
 	margin-left: 30px;
 }
 
-/* Footer Styles */
-footer {
-	text-align: center;
-	padding: 10px;
-	background-color: #16141424;
-	color: #000000;
-	margin-top: auto;
-}
-
-/* Navbar Styles */
-nav {
-	background-color: #0f0f106d;
-	padding: 10px;
-}
-
 .navbar-button-container {
 	display: flex;
 	justify-content: center;
@@ -118,20 +97,14 @@ nav {
 	}
 
 	75% {
-		top: calc(72vh - 30px);
+		top: calc(70vh - 30px);
 		transform: rotate(30deg);
 	}
 
 	100% {
-		top: calc(72vh - 30px);
+		top: calc(70vh - 30px);
 		transform: rotate(30deg);
 	}
-}
-
-/* Style for the button text when falling animation ends */
-.contact-me.black-text {
-	color: black;
-	font-weight: bold;
 }
 
 .contact-me {
@@ -156,20 +129,20 @@ nav {
 	}
 
 	75% {
-		top: calc(72vh - 30px);
-		transform: rotate(-25deg);
+		top: calc(70vh - 30px);
+		transform: rotate(-35deg);
 		/* Stop at 3/4 of the screen */
 	}
 
 	100% {
-		top: calc(72vh - 30px);
-		transform: rotate(-25deg);
+		top: calc(70vh - 30px);
+		transform: rotate(-35deg);
 		/* Stay at 3/4 of the screen */
 	}
 }
 
 /* Style for the button text when falling animation ends */
-.contact-me.black-text {
+.black-text {
 	color: black;
 	font-weight: bold;
 }
@@ -221,9 +194,9 @@ body {
 .conversation-bubbleABM {
 	height: 20px;
 	position: absolute;
-	top: 42%;
-	right: 600px;
-	transform: translateY(-50%);
+	top: 38%;
+	left: 71%;
+	transform: translateX(-50%);
 	padding: 10px;
 	background-color: #ffffff9c;
 	border: 2px solid #ccc;
@@ -236,9 +209,9 @@ body {
 .conversation-bubbleCM {
 	height: 20px;
 	position: absolute;
-	top: 47%;
-	right: 550px;
-	transform: translateY(-50%);
+	top: 43%;
+	left: 74%;
+	transform: translateX(-50%);
 	padding: 10px;
 	background-color: #ffffff9c;
 	border: 2px solid #ccc;
@@ -259,4 +232,34 @@ body {
 .conversation-bubble p {
 	color: #333;
 	font-size: 14px;
+}
+
+/* All links will have white text color */
+a {
+	color: #fff;
+	text-decoration: none; /* Optional: Removes underline */
+  }
+  
+  /* Optional: Style links on hover and visited state */
+  a:hover {
+	color: #ffffff; /* Change the color on hover */
+  }
+  
+  a:visited {
+	color: #ffffff; /* Change the color for visited links */
+  }
+
+/* Footer Styles */
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #16141424;
+	color: #ffffff;
+	margin-top: auto;
+}
+
+/* Navbar Styles */
+nav {
+	background-color: #0f0f106d;
+	padding: 10px;
 }

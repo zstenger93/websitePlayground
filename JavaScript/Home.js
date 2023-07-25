@@ -56,7 +56,7 @@ navbarButtonContact.addEventListener("animationend", () => {
 		conversationBubbleCM.style.display = "flex";
 		conversationBubbleCM.style.justifyContent = "center";
 		conversationBubbleCM.style.alignItems = "center";
-		navbarButtonAbout.classList.add("black-text");
+		navbarButtonContact.classList.add("black-text");
 	}
 });
 
