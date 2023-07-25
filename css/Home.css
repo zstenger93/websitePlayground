@@ -1,0 +1,283 @@
+/* General Styles */
+/* Set background image for the body */
+body {
+	background-image: url("../resources/images/space.jpeg");
+	/* Replace with the actual path to your image */
+	background-size: cover;
+	/* Adjusts the image size to cover the entire background */
+	background-repeat: no-repeat;
+	/* Prevents the image from repeating */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	/* Ensures the body takes at least the full viewport height */
+	margin: 0;
+}
+
+/* Set background image for a specific section */
+.section-with-background {
+	background-image: url("../resources/images/space.jpeg");
+	/* Replace with the actual path to your image */
+	background-size: cover;
+	/* Adjusts the image size to cover the entire background */
+	background-repeat: no-repeat;
+	/* Prevents the image from repeating */
+}
+
+h1 {
+	color: #0066cc;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	color: #555;
+	font-size: 16px;
+}
+
+/* Header Styles */
+header {
+	text-align: center;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+header img {
+	max-width: 200px;
+}
+
+/* Navigation Styles */
+nav {
+	background-color: #0066cc;
+	text-align: center;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	background-color: #004080;
+}
+
+/* Sections Styles */
+section {
+	padding: 20px;
+}
+
+ul,
+ol {
+	margin-left: 30px;
+}
+
+/* Footer Styles */
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #16141424;
+	color: #000000;
+	/* Position the footer at the bottom */
+	margin-top: auto;
+}
+
+/* Navbar Styles */
+nav {
+	background-color: #0f0f106d;
+	padding: 10px;
+}
+
+.navbar-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+}
+
+.about-me {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #0f0f1022;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	overflow: hidden;
+	transition: top 0.4s ease-in-out;
+	/* Add the transition property for smooth animation */
+}
+
+/* Keyframes for the button fall animation */
+@keyframes fall {
+	0% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		top: calc(72vh - 30px);
+		transform: rotate(30deg);
+		/* Stop at 3/4 of the screen */
+	}
+
+	100% {
+		top: calc(72vh - 30px);
+		transform: rotate(30deg);
+		/* Stay at 3/4 of the screen */
+	}
+}
+
+/* Style for the button text when falling animation ends */
+.contact-me.black-text {
+	color: black;
+	font-weight: bold;
+}
+
+.contact-me {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #0f0f1022;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	overflow: hidden;
+	transition: top 0.4s ease-in-out;
+	/* Add the transition property for smooth animation */
+}
+
+/* Keyframes for the button fall animation */
+@keyframes fallCM {
+	0% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		top: calc(72vh - 30px);
+		transform: rotate(-25deg);
+		/* Stop at 3/4 of the screen */
+	}
+
+	100% {
+		top: calc(72vh - 30px);
+		transform: rotate(-25deg);
+		/* Stay at 3/4 of the screen */
+	}
+}
+
+/* Style for the button text when falling animation ends */
+.contact-me.black-text {
+	color: black;
+	font-weight: bold;
+}
+
+/* MY WORK Button Styles */
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.oval-button {
+	width: 180px;
+	height: 30px;
+	border: none;
+	background-image: url("../resources/images/button.jpeg");
+	/* Replace with the actual path to your image */
+	background-size: cover;
+	background-color: transparent;
+	/* Set the background color to transparent to show the image */
+	color: #fff;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	transform-origin: left center;
+	/* Change the transform-origin to the right side of the button */
+	animation: swing 3s ease-in-out infinite alternate;
+	left: -140px;
+}
+
+/* Keyframes for the swing animation */
+@keyframes swing {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(+30deg);
+	}
+}
+
+/* Styles for the conversation bubble */
+.conversation-bubbleABM {
+	height: 20px;
+	position: absolute;
+	top: 42%;
+	right: 600px;
+	/* Adjust the distance from the right side */
+	transform: translateY(-50%);
+	padding: 10px;
+	background-color: #ffffff9c;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	/* Make sure the bubble appears above other elements */
+	display: none;
+	/* Initially hide the bubble */
+}
+
+.conversation-bubbleCM {
+	height: 20px;
+	position: absolute;
+	top: 47%;
+	right: 550px;
+	/* Adjust the distance from the right side */
+	transform: translateY(-50%);
+	padding: 10px;
+	background-color: #ffffff9c;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	/* Make sure the bubble appears above other elements */
+	display: none;
+	/* Initially hide the bubble */
+}
+
+.conversation-bubbleCM-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Fill the conversation bubble height */
+  }
+
+/* Style for the conversation bubble text */
+.conversation-bubble p {
+	color: #333;
+	font-size: 14px;
+}
