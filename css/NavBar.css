@@ -55,12 +55,13 @@ ol {
 	}
 
 	75% {
-		top: calc(70vh - 30px);
+		top: calc(69vh - 30px);
 		transform: rotate(30deg);
 	}
-
+	
 	100% {
-		top: calc(70vh - 30px);
+		top: calc(69vh - 30px);
+		left: calc(-1vw);
 		transform: rotate(30deg);
 	}
 }
@@ -87,13 +88,66 @@ ol {
 	}
 
 	75% {
-		top: calc(70vh - 30px);
+		top: calc(69vh - 30px);
 		transform: rotate(-35deg);
 	}
 
 	100% {
-		top: calc(70vh - 30px);
+		top: calc(69vh - 30px);
 		transform: rotate(-35deg);
+		left: calc(-2vw);
+	}
+}
+
+.projects {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #0f0f1022;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 8% / 50%;
+	position: relative;
+	overflow: hidden;
+	transition: top 0.4s ease-in-out;
+}
+
+/* Keyframes for the button fall animation */
+@keyframes fallP {
+	0% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+
+	25% {
+		top: calc(50vh - 30px);
+		left: calc(1vw);
+		transform: rotate(2deg);
+	}
+
+	50% {
+		top: calc(57vh - 30px);
+		left: calc(2vw);
+		transform: rotate(3deg);
+	}
+
+	75% {
+		top: calc(63vh - 30px);
+		left: calc(3vw);
+		transform: rotate(4deg);
+	}
+
+	85% {
+		top: calc(65vh - 30px);
+		left: calc(4vw);
+		transform: rotate(6deg);
+	}
+
+	100% {
+		top: calc(67vh - 30px);
+		left: calc(5vw);
+		transform: rotate(7deg);
 	}
 }
 
