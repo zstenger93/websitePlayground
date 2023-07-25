@@ -35,14 +35,14 @@ ol {
 
 .about-me {
 	width: 120px;
-	height: 30px;
+	height: 25px;
 	border: none;
 	background-image: url("../resources/images/button.jpeg");
 	background-size: cover;
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
-	border-radius: 8% / 50%;
+	border-radius: 10% / 50%;
 	position: relative;
 	overflow: hidden;
 	transition: top 0.4s ease-in-out;
@@ -69,14 +69,14 @@ ol {
 
 .contact-me {
 	width: 120px;
-	height: 30px;
+	height: 25px;
 	border: none;
 	background-image: url("../resources/images/button.jpeg");
 	background-size: cover;
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
-	border-radius: 8% / 50%;
+	border-radius: 10% / 50%;
 	position: relative;
 	overflow: hidden;
 	transition: top 0.4s ease-in-out;
@@ -103,14 +103,14 @@ ol {
 
 .projects {
 	width: 120px;
-	height: 30px;
+	height: 25px;
 	border: none;
 	background-image: url("../resources/images/button.jpeg");
 	background-size: cover;
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 20px;
-	border-radius: 8% / 50%;
+	border-radius: 10% / 50%;
 	position: relative;
 	overflow: hidden;
 	transition: top 0.02s linear;
@@ -123,49 +123,18 @@ ol {
 		transform: rotate(0deg);
 	}
 
-	25% {
-		top: calc(16vh - 30px);
-		left: calc(1vw);
-		transform: rotate(2deg);
-	}
-
-	37% {
-		top: calc(25vh - 30px);
-		left: calc(1vw);
-		transform: rotate(2deg);
-	}
-
-	50% {
-		top: calc(33vh - 30px);
-		left: calc(2vw);
-		transform: rotate(3deg);
-	}
-
-	75% {
-		top: calc(49vh - 30px);
-		left: calc(3vw);
-		transform: rotate(5deg);
-	}
-
-	87% {
-		top: calc(63vh - 30px);
-		left: calc(4vw);
-		transform: rotate(6deg);
-	}
-
 	100% {
-		top: calc(67vh - 30px);
-		left: calc(5vw);
-		transform: rotate(7deg);
+		top: calc(65vh - 23px);
+		left: calc(1.5vw);
+		transform: rotate(-4deg);
 	}
 }
 
 .element-to-animate {
 	animation-name: fallP;
-	animation-duration: 1s; /* Set the duration to 2 seconds */
+	animation-duration: 1s;
   }
 
-/* Style for the button text when falling animation ends */
 .black-text {
 	color: rgb(235, 41, 41);
 	font-weight: bold;

@@ -21,6 +21,7 @@ body {
 	background-color: transparent;
 	color: #fff;
 	font-size: 18px;
+	font-weight: bold;
 	border-radius: 8% / 50%;
 	position: relative;
 	transform-origin: left center;

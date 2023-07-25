@@ -117,3 +117,30 @@ bubbleTextP.textContent = "Actual projectcss.";
 conversationBubbleP.classList.add("conversation-bubbleP");
 conversationBubbleP.appendChild(bubbleTextP);
 document.body.appendChild(conversationBubbleP);
+
+
+const dropdownButton = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropdownContent.style.display = 'none';
+
+dropdownButton.addEventListener('mouseenter', () => {
+  dropdownContent.style.display = 'flex';
+});
+
+dropdownButton.addEventListener('mouseleave', () => {
+  dropdownContent.style.display = 'none';
+});
+
+const dropdownButton2 = document.querySelector('.dropbtn2');
+const dropdownContent2 = document.querySelector('.dropdown-content2');
+
+dropdownContent2.style.display = 'none';
+
+dropdownButton2.addEventListener('mouseenter', () => {
+  dropdownContent2.style.display = 'flex';
+});
+
+dropdownButton2.addEventListener('mouseleave', () => {
+  dropdownContent2.style.display = 'none';
+});
