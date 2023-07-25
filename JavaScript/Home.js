@@ -90,7 +90,7 @@ navbarButtonProjects.addEventListener("mouseenter", () => {
 
 navbarButtonProjects.addEventListener("animationend", () => {
 	if (!isButtonClicked) {
-		navbarButtonProjects.style.animation = "fallP 1s forwards paused";
+		navbarButtonProjects.style.animation = "fallP 5ms forwards paused";
 
 		conversationBubbleP.style.display = "flex";
 		conversationBubbleP.style.justifyContent = "center";

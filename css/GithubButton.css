@@ -33,11 +33,11 @@ body {
 
 	0%,
 	100% {
-		transform: rotate(0deg);
+		transform: rotate(65deg);
 	}
 
 	50% {
-		transform: rotate(+30deg);
+		transform: rotate(100deg);
 	}
 }
 
