@@ -2,26 +2,19 @@
 /* Set background image for the body */
 body {
 	background-image: url("../resources/images/space.jpeg");
-	/* Replace with the actual path to your image */
 	background-size: cover;
-	/* Adjusts the image size to cover the entire background */
 	background-repeat: no-repeat;
-	/* Prevents the image from repeating */
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	/* Ensures the body takes at least the full viewport height */
 	margin: 0;
 }
 
 /* Set background image for a specific section */
 .section-with-background {
 	background-image: url("../resources/images/space.jpeg");
-	/* Replace with the actual path to your image */
 	background-size: cover;
-	/* Adjusts the image size to cover the entire background */
 	background-repeat: no-repeat;
-	/* Prevents the image from repeating */
 }
 
 h1 {
@@ -87,7 +80,6 @@ footer {
 	padding: 10px;
 	background-color: #16141424;
 	color: #000000;
-	/* Position the footer at the bottom */
 	margin-top: auto;
 }
 
@@ -116,7 +108,6 @@ nav {
 	position: relative;
 	overflow: hidden;
 	transition: top 0.4s ease-in-out;
-	/* Add the transition property for smooth animation */
 }
 
 /* Keyframes for the button fall animation */
@@ -129,13 +120,11 @@ nav {
 	75% {
 		top: calc(72vh - 30px);
 		transform: rotate(30deg);
-		/* Stop at 3/4 of the screen */
 	}
 
 	100% {
 		top: calc(72vh - 30px);
 		transform: rotate(30deg);
-		/* Stay at 3/4 of the screen */
 	}
 }
 
@@ -157,7 +146,6 @@ nav {
 	position: relative;
 	overflow: hidden;
 	transition: top 0.4s ease-in-out;
-	/* Add the transition property for smooth animation */
 }
 
 /* Keyframes for the button fall animation */
@@ -205,16 +193,13 @@ body {
 	height: 30px;
 	border: none;
 	background-image: url("../resources/images/button.jpeg");
-	/* Replace with the actual path to your image */
 	background-size: cover;
 	background-color: transparent;
-	/* Set the background color to transparent to show the image */
 	color: #fff;
 	font-size: 18px;
 	border-radius: 8% / 50%;
 	position: relative;
 	transform-origin: left center;
-	/* Change the transform-origin to the right side of the button */
 	animation: swing 3s ease-in-out infinite alternate;
 	left: -140px;
 }
@@ -238,7 +223,6 @@ body {
 	position: absolute;
 	top: 42%;
 	right: 600px;
-	/* Adjust the distance from the right side */
 	transform: translateY(-50%);
 	padding: 10px;
 	background-color: #ffffff9c;
@@ -246,9 +230,7 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	z-index: 999;
-	/* Make sure the bubble appears above other elements */
 	display: none;
-	/* Initially hide the bubble */
 }
 
 .conversation-bubbleCM {
@@ -256,7 +238,6 @@ body {
 	position: absolute;
 	top: 47%;
 	right: 550px;
-	/* Adjust the distance from the right side */
 	transform: translateY(-50%);
 	padding: 10px;
 	background-color: #ffffff9c;
@@ -264,16 +245,14 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	z-index: 999;
-	/* Make sure the bubble appears above other elements */
 	display: none;
-	/* Initially hide the bubble */
 }
 
 .conversation-bubbleCM-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%; /* Fill the conversation bubble height */
+	height: 100%;
   }
 
 /* Style for the conversation bubble text */
