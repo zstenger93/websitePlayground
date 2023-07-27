@@ -37,7 +37,7 @@ ol {
 	width: 120px;
 	height: 25px;
 	border: none;
-	background-image: url("../resources/images/button.jpeg");
+	background-image: url("../../resources/images/button.jpeg");
 	background-size: cover;
 	color: #fff;
 	font-weight: bold;
@@ -59,7 +59,7 @@ ol {
 		top: calc(69vh - 30px);
 		transform: rotate(30deg);
 	}
-	
+
 	100% {
 		top: calc(69vh - 30px);
 		left: calc(-1vw);
@@ -71,7 +71,7 @@ ol {
 	width: 120px;
 	height: 25px;
 	border: none;
-	background-image: url("../resources/images/button.jpeg");
+	background-image: url("../../resources/images/button.jpeg");
 	background-size: cover;
 	color: #fff;
 	font-weight: bold;
@@ -105,7 +105,7 @@ ol {
 	width: 120px;
 	height: 25px;
 	border: none;
-	background-image: url("../resources/images/button.jpeg");
+	background-image: url("../../resources/images/button.jpeg");
 	background-size: cover;
 	color: #ffffff;
 	font-weight: bold;
@@ -133,7 +133,7 @@ ol {
 .element-to-animate {
 	animation-name: fallP;
 	animation-duration: 1s;
-  }
+}
 
 .black-text {
 	color: rgb(235, 41, 41);

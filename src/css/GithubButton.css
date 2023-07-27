@@ -16,7 +16,7 @@ body {
 	width: 180px;
 	height: 30px;
 	border: none;
-	background-image: url("../resources/images/button.jpeg");
+	background-image: url("../../resources/images/button.jpeg");
 	background-size: cover;
 	background-color: transparent;
 	color: #fff;

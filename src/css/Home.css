@@ -1,6 +1,6 @@
 /* Set background image for the body */
 body {
-	background-image: url("../resources/images/space.jpeg");
+	background-image: url("../../resources/images/space.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
